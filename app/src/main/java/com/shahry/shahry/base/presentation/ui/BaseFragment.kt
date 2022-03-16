@@ -1,4 +1,4 @@
-package com.shahry.shahry.base.presentation.screen
+package com.shahry.shahry.base.presentation.ui
 
 import android.os.Bundle
 import android.view.View
