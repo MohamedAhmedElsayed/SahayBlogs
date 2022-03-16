@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navi"
+    app:startDestination="@id/authresFragment">
+
+    <fragment
+        android:id="@+id/authresFragment"
+        android:name="com.shahry.shahry.authors.presentation.view.AuthorsFragment"
+        android:label="@string/auters"
+        tools:layout="@layout/fragment_authres" />
+</navigation>

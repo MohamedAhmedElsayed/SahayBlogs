@@ -1,0 +1,123 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+    id 'androidx.navigation.safeargs.kotlin'
+    id 'kotlin-parcelize'
+
+}
+android {
+    compileSdkVersion rootProject.ext.compileSdk
+
+    defaultConfig {
+        applicationId "com.shahry.shahry"
+        versionCode 1
+        minSdkVersion rootProject.ext.minSdk
+        targetSdkVersion rootProject.ext.targetSdk
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        dataBinding true
+    }
+}
+
+dependencies {
+    implementation("androidx.core:core-ktx:$core_ktx")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_core_version")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_andorid_version")
+    //AppCompat
+    implementation "androidx.appcompat:appcompat:$appcompat"
+    //Material Design
+    implementation "com.google.android.material:material:$material"
+    //Constraint Layout
+    implementation "androidx.constraintlayout:constraintlayout:$constraintlayout"
+    //Legacy Support
+    implementation "androidx.legacy:legacy-support-v4:$legacy_support"
+    // ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    // LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+    // Lifecycles only (without ViewModel or LiveData)
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version"
+    //Hilt dependencies
+    implementation "com.google.dagger:hilt-android:$hilt_version"
+    kapt "com.google.dagger:hilt-compiler:$hilt_version"
+    implementation 'androidx.hilt:hilt-navigation-fragment:1.0.0'
+    //Retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofit"
+    implementation "androidx.fragment:fragment-ktx:$fragment_version"
+    ////Gson
+    implementation "com.google.code.gson:gson:$gson"
+    implementation "com.squareup.retrofit2:converter-gson:$gson_converter"
+    //Navigation component
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+    //Espresso, Junit,mockito
+    androidTestImplementation "androidx.test:runner:$androidx_test_runner"
+    androidTestImplementation "androidx.test:rules:$androidx_test_runner"
+    testImplementation("junit:junit:$junit")
+    androidTestImplementation "androidx.test.ext:junit:$ext_junit"
+
+    androidTestImplementation('com.google.dagger:hilt-android-testing:2.40.5')
+    // ...with Kotlin using hilt.
+    kaptAndroidTest('com.google.dagger:hilt-android-compiler:2.40.5')
+
+    testImplementation 'org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.0'
+    //Glide
+    implementation "com.github.bumptech.glide:glide:$glide"
+    annotationProcessor "com.github.bumptech.glide:compiler:$glide"
+
+    // Dependencies for local unit tests
+    testImplementation "androidx.arch.core:core-testing:$local_unit_test"
+
+    // AndroidX Test - JVM testing
+    testImplementation "androidx.test:core-ktx:$core_test"
+    testImplementation "androidx.test.ext:junit:$junit_test"
+
+    // Dependencies for local unit tests
+    testImplementation "androidx.arch.core:core-testing:$local_unit_test"
+    //Test
+    //Mockito
+    testImplementation "org.mockito:mockito-core:$mockito"
+    androidTestImplementation "org.mockito:mockito-android:$mockito"
+    testImplementation 'org.mockito:mockito-inline:4.2.0'
+    testImplementation "org.mockito.kotlin:mockito-kotlin:4.0.0"
+    //Espresso
+    androidTestImplementation "androidx.test.espresso:espresso-core:$espresso"
+    //Runner/Rules
+    androidTestImplementation "androidx.test:runner:$androidx_test_runner"
+    androidTestImplementation "androidx.test:rules:$androidx_test_runner"
+    //SSP and SDP  scalable size unit
+    implementation "com.intuit.sdp:sdp-android:$scalable_unit_version"
+    implementation "com.intuit.ssp:ssp-android:$scalable_unit_version"
+
+    implementation "com.squareup.okhttp3:logging-interceptor:$logging_interceptor"
+
+
+    testImplementation 'io.mockk:mockk:1.12.2'
+    testImplementation 'org.json:json:20201115'
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.8.1'
+
+
+}
+
+kapt {
+    correctErrorTypes true
+}
+

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Shahry</string>
+    <string name="network_connection_error">Network connection error</string>
+    <string name="auth_error">Auth error</string>
+    <string name="server_error">Server error</string>
+    <string name="unExpected_error">Unexpected error</string>
+    <string name="auters">Auters</string>
+</resources>
