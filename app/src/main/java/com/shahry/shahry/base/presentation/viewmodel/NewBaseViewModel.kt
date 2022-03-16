@@ -1,4 +1,4 @@
-package com.shahry.shahry.base.ui.viewmodel
+package com.shahry.shahry.base.presentation.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

@@ -1,4 +1,4 @@
-package com.shahry.shahry.base.ui.screen
+package com.shahry.shahry.base.presentation.screen
 
 import android.os.Bundle
 import android.view.View
@@ -8,7 +8,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
-import com.shahry.shahry.base.ui.viewmodel.*
+import com.shahry.shahry.base.presentation.viewmodel.*
 
 abstract class BaseFragment<DataBinding : ViewDataBinding, STATE : ViewState, EVENT : ViewEvent, ACTION : Action, RESULT : Result>(
     @LayoutRes layoutId: Int,

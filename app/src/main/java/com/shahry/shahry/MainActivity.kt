@@ -3,9 +3,11 @@ package com.shahry.shahry
 import android.os.Bundle
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
-import com.shahry.shahry.base.ui.screen.BaseActivity
+import com.shahry.shahry.base.presentation.screen.BaseActivity
 import com.shahry.shahry.databinding.ActivityMainBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : BaseActivity() {
     private var _binding: ActivityMainBinding? = null
     private val binding get() = _binding!!

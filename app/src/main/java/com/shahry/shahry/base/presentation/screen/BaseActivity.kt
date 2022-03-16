@@ -1,4 +1,4 @@
-package com.shahry.shahry.base.ui.screen
+package com.shahry.shahry.base.presentation.screen
 
 import android.annotation.SuppressLint
 import android.view.MenuItem
