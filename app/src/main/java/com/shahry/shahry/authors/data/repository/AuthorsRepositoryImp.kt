@@ -12,12 +12,12 @@ class AuthorsRepositoryImp @Inject constructor(
     private val authorLocalDataSource: AuthorLocalDataSource
 ) : IAuthorsRepo {
     override suspend fun loadAuthors(): ArrayList<Author>? {
-        val reponse = authorsRemoteDataSource.loadAuthors()
-        return if (reponse is NetworkResponse.Success) {
-            reponse.data?.let {
+        val response = authorsRemoteDataSource.loadAuthors()
+        return if (response is NetworkResponse.Success) {
+            response.data?.let {
                 authorLocalDataSource.insertAuthors(it)
             }
-            (reponse.data)
+            (response.data)
         } else {
             authorLocalDataSource.readAuthors()
 

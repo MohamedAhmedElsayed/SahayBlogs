@@ -21,10 +21,7 @@ abstract class BaseActivity : AppCompatActivity() {
     ): T = DataBindingUtil.setContentView(this, resId)
 
 
-    @SuppressLint("ResourceType")
-    fun configureToolbar(@LayoutRes toolbarId: Int) {
-        setSupportActionBar(findViewById(toolbarId))
-    }
+
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item.itemId == android.R.id.home) {

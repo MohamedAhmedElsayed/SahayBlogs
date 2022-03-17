@@ -17,7 +17,6 @@ abstract class AuthorsModule {
     @Binds
     abstract fun bindsAuthorsRepo(repositoryImp: AuthorsRepositoryImp): IAuthorsRepo
 
-
     @Binds
     abstract fun bindsAuthorRemoteDataSource(authorsRemoteDataSource: AuthorsRemoteDataSourceImp):
             IAuthorsRemoteDataSource

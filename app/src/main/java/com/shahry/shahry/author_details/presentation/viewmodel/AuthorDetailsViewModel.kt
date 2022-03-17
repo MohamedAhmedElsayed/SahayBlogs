@@ -20,7 +20,6 @@ class AuthorDetailsViewModel @Inject constructor(private val loadAuthorPostsUseC
                 onViewEvent(AuthorDetailsViewEvent.ShowLoading)
                 val result = loadAuthorPostsUseCase.execute(action.id.toString())
                 if (result is AuthorDetailsResult.FailureLoadingAuthorPosts) {
-                    Log.e("AA", "error")
                     onViewEvent(AuthorDetailsViewEvent.PostsFailure(result.errorMessage))
                 } else emit(result)
                 onViewEvent(AuthorDetailsViewEvent.HideLoading)
@@ -32,7 +31,6 @@ class AuthorDetailsViewModel @Inject constructor(private val loadAuthorPostsUseC
     override fun reduce(result: AuthorDetailsResult): AuthorDetailsViewState {
         return when (result) {
             is AuthorDetailsResult.SuccessLoadingAuthorPosts -> {
-                Log.e("AA", "sucess ${result.posts.size}")
                 currentState.copy(posts = result.posts)
             }
 

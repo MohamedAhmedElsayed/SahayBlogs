@@ -1,29 +1,7 @@
 
 ?
 settings.gradle,0\5\05efc8b1657769a27696d478ded1e95f38737233
-|
-Lapp/src/main/java/com/shahry/shahry/author_details/di/AuthorDetailsModule.kt,2\4\24f9a22ba0d1984ab9a085430bde15234db3ddfa
-€
-Papp/src/main/java/com/shahry/shahry/author_details/di/AuthorDetailsApisMoodle.kt,3\7\3761a063fc5de847ff95304e5d367dedeb2d9c91
-s
-Capp/src/main/java/com/shahry/shahry/authors/di/AuthorsApisMoodle.kt,5\a\5ad0a7cd05bb150cbbc912f1bc89f9a62a5c32bf
-}
-Mapp/src/main/java/com/shahry/shahry/authors/domain/repository/IAuthorsRepo.kt,1\f\1fb7f8c5be59aa31e757942a6a86e7bce5316fab
-€
-Papp/src/main/java/com/shahry/shahry/authors/domain/usecase/LoadAuthorsUseCase.kt,3\6\361bc1bfe8d6e516ee86084fe1aebc8b70798b91
-
-Oapp/src/main/java/com/shahry/shahry/authors/data/local/AuthorLocalDataSource.kt,7\a\7a8e7d0aa432123aa837222bb6b04510439efeea
-o
-?app/src/main/java/com/shahry/shahry/authors/di/AuthorsModule.kt,e\b\eb63322207592617bb8a4cae025be503eb918206
 g
 7app/src/main/java/com/shahry/shahry/base/app/BaseApp.kt,f\a\fae2d94e9b209c472f81d13b25a68d86b691e320
-ƒ
-Sapp/src/main/java/com/shahry/shahry/authors/data/repository/AuthorsRepositoryImp.kt,c\f\cf61cb1932341e21c7ec21f1015ab2a71e334f0c
-@
-app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
 <
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
-{
-Kapp/src/main/java/com/shahry/shahry/author_details/data/model/AuthorPost.kt,c\9\c99a391b2df2fe6652b44033ee8c7949fabe28ba
-‚
-Rapp/src/main/java/com/shahry/shahry/authors/data/local/AuthorLocalDataSourceImp.kt,c\8\c8b63edadf8b99f34038d36d42269051cb68e1e4

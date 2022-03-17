@@ -1,4 +1,4 @@
-package com.shahry.shahry.authors.di
+package com.shahry.shahry.author_details.di
 
 import com.shahry.shahry.author_details.data.remote.apis.AuthorsDetailsApis
 import dagger.Module

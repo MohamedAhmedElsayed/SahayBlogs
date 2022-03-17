@@ -76,8 +76,7 @@ abstract class NewBaseViewModel<STATE : ViewState, EVENT : ViewEvent, ACTION : A
      *
      * @param state is the new state to be emitted to the view
      */
-    //todo i removed private please investigate with MahmoudAyman or Pola
-    suspend fun onViewState(state: STATE) {
+     suspend fun onViewState(state: STATE) {
         _uiState.emit(state)
     }
 

@@ -1,4 +1,4 @@
-package com.shahry.shahry.authors.di
+package com.shahry.shahry.author_details.di
 
 import com.shahry.shahry.author_details.data.remote.datasource.AuthorDetailsRemoteDataSourceImp
 import com.shahry.shahry.author_details.data.remote.datasource.IAuthorsDetailsRemoteDataSource
@@ -14,7 +14,6 @@ import dagger.hilt.android.components.ViewModelComponent
 abstract class AuthorDetailsModule {
     @Binds
     abstract fun bindsAuthorDetailsRepo(repositoryImp: AuthorDetailsRepositoryImp): IAuthorDetailsRepo
-
 
     @Binds
     abstract fun bindsAuthorDetailsRemoteDataSource(authorDetailsRemoteDataSource: AuthorDetailsRemoteDataSourceImp): IAuthorsDetailsRemoteDataSource

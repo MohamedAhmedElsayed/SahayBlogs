@@ -9,5 +9,5 @@ import retrofit2.http.Query
 
 interface AuthorsDetailsApis {
     @GET(CloudConfig.POSTS)
-    suspend fun loadAuthorPosts(@Query("authorId") authorId:String): Response<ArrayList<AuthorPost>?>
+    suspend fun loadAuthorPosts(@Query("authorId") authorId: String): Response<ArrayList<AuthorPost>?>
 }

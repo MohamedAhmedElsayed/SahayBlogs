@@ -80,7 +80,7 @@ class AuthorDetailsFragment :
     }
 
     override fun handleViewState(state: AuthorDetailsViewState) {
-      Log.e("AA","${state.posts.size}")
+        Log.e("AA", "${state.posts.size}")
         postsAdapter.setData(state.posts)
     }
 }
