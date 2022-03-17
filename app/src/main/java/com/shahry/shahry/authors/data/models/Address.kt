@@ -1,8 +1,9 @@
 package com.shahry.shahry.authors.data.models
 
+import io.realm.RealmObject
 
-data class Address(
-    var latitude: String? = null,
-    var longitude: String? = null
 
-)
+open class Address(
+    var latitude: Double? = null,
+    var longitude: Double? = null
+) : RealmObject()

@@ -1,5 +1,7 @@
 package com.shahry.shahry.authors.di
 
+import com.shahry.shahry.authors.data.local.AuthorLocalDataSource
+import com.shahry.shahry.authors.data.local.AuthorLocalDataSourceImp
 import com.shahry.shahry.authors.data.remote.datasource.AuthorsRemoteDataSourceImp
 import com.shahry.shahry.authors.data.remote.datasource.IAuthorsRemoteDataSource
 import com.shahry.shahry.authors.data.repository.AuthorsRepositoryImp
@@ -19,4 +21,8 @@ abstract class AuthorsModule {
     @Binds
     abstract fun bindsAuthorRemoteDataSource(authorsRemoteDataSource: AuthorsRemoteDataSourceImp):
             IAuthorsRemoteDataSource
+
+    @Binds
+    abstract fun bindsAuthorLocalDataSource(authorLocalDataSourceImp: AuthorLocalDataSourceImp):
+            AuthorLocalDataSource
 }
