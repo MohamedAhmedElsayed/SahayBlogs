@@ -10,7 +10,6 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/_14sdp"
         android:layout_marginTop="@dimen/_16sdp"
-        android:padding="@dimen/_8sdp"
         app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="@dimen/_10sdp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -19,6 +18,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
+            android:padding="@dimen/_8sdp"
+
             android:layout_height="match_parent">
 
             <com.google.android.material.imageview.ShapeableImageView

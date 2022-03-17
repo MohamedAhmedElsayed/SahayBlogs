@@ -9,7 +9,6 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/_14sdp"
         android:layout_marginTop="@dimen/_16sdp"
-        android:padding="@dimen/_8sdp"
         app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="@dimen/_10sdp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -18,7 +17,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:padding="@dimen/_8sdp">
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/author_image"
@@ -62,23 +62,26 @@
                 android:autoLink="email"
                 android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/location_fab"
                 app:layout_constraintEnd_toStartOf="@+id/location_fab"
                 app:layout_constraintStart_toEndOf="@+id/author_image"
-                app:layout_constraintTop_toBottomOf="@+id/author_user_name_tv"
+                app:layout_constraintTop_toTopOf="@id/location_fab"
                 tools:text="abc@aa.com" />
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/location_fab"
                 android:layout_width="wrap_content"
-                android:layout_height="@dimen/_24sdp"
+                android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/_8sdp"
                 android:layout_marginBottom="@dimen/_8sdp"
+                android:src="@drawable/ic_baseline_location_on_24"
+                app:fabCustomSize="@dimen/_24sdp"
                 app:fabSize="mini"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/author_email_tv"
-                app:layout_constraintTop_toTopOf="@id/author_email_tv" />
+                app:layout_constraintTop_toBottomOf="@+id/author_user_name_tv"
+                app:tint="@null" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>

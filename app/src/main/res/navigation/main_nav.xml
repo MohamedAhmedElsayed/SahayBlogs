@@ -9,5 +9,23 @@
         android:id="@+id/authresFragment"
         android:name="com.shahry.shahry.authors.presentation.view.AuthorsFragment"
         android:label="@string/auters"
-        tools:layout="@layout/fragment_authres" />
+        tools:layout="@layout/fragment_authres">
+        <action
+            android:id="@+id/toAuthorDetails"
+            app:destination="@id/authorDetailsFragment">
+
+            <argument
+                android:name="author"
+                app:argType="com.shahry.shahry.authors.data.models.Author" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/authorDetailsFragment"
+        android:name="com.shahry.shahry.author_details.presentation.ui.AuthorDetailsFragment"
+        android:label="Author Details"
+        tools:layout="@layout/fragment_autor_details">
+        <argument
+            android:name="author"
+            app:argType="com.shahry.shahry.authors.data.models.Author" />
+    </fragment>
 </navigation>

@@ -4,13 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <androidx.cardview.widget.CardView
-
         android:id="@+id/post_card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/_14sdp"
         android:layout_marginTop="@dimen/_16sdp"
-        android:padding="@dimen/_8sdp"
         app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="@dimen/_10sdp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -19,14 +17,15 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:padding="@dimen/_8sdp">
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/post_image"
-                android:layout_width="@dimen/_70sdp"
-                android:layout_height="@dimen/_70sdp"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
                 android:layout_gravity="center"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/barrier2"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:shapeAppearanceOverlay="@style/roundedImageView" />
@@ -35,9 +34,10 @@
                 android:id="@+id/author_title_Tv"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:padding="@dimen/_8sdp"
                 android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                app:layout_constraintBottom_toTopOf="@id/post_body_tv"
+                app:layout_constraintBottom_toTopOf="@id/barrier2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/post_image"
                 app:layout_constraintTop_toTopOf="parent"
@@ -52,9 +52,17 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/post_image"
-                app:layout_constraintTop_toBottomOf="@+id/author_title_Tv"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/barrier2"
                 tools:text="body" />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrier2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="author_title_Tv,post_image" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
