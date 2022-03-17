@@ -109,6 +109,7 @@ dependencies {
 
     implementation "com.squareup.okhttp3:logging-interceptor:$logging_interceptor"
 
+    implementation "androidx.datastore:datastore:$data_store"
 
     testImplementation 'io.mockk:mockk:1.12.2'
     testImplementation 'org.json:json:20201115'

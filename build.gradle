@@ -32,7 +32,8 @@ buildscript {
         core_test = "1.4.0"
         mockito = "4.2.0"
         google_play_services = "20.0.1"
-        google_services="4.3.10"
+        google_services = "4.3.10"
+        data_store = "1.0.0"
     }
     dependencies {
         classpath "com.google.dagger:hilt-android-gradle-plugin:$hilt_version"

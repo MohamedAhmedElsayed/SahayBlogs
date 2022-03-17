@@ -5,4 +5,6 @@
     <string name="server_error">Server error</string>
     <string name="unExpected_error">Unexpected error</string>
     <string name="auters">Auters</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

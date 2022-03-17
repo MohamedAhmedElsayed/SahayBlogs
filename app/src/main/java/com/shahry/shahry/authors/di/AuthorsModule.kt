@@ -6,7 +6,6 @@ import com.shahry.shahry.authors.data.repository.AuthorsRepositoryImp
 import com.shahry.shahry.authors.domain.repository.IAuthorsRepo
 import dagger.Binds
 import dagger.Module
-import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ViewModelComponent
 
@@ -18,5 +17,6 @@ abstract class AuthorsModule {
 
 
     @Binds
-    abstract fun bindsAuthorRemoteDataSource(authorsRemoteDataSource: AuthorsRemoteDataSourceImp): IAuthorsRemoteDataSource
+    abstract fun bindsAuthorRemoteDataSource(authorsRemoteDataSource: AuthorsRemoteDataSourceImp):
+            IAuthorsRemoteDataSource
 }
